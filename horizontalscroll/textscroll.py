@@ -4,7 +4,7 @@ import os
 
 import string
 
-from verticalscroll.config import Config
+from horizontalscroll.config import Config
 
 class TextScroll:
     def __init__(self, window_size):
@@ -50,16 +50,13 @@ class TextScroll:
         self.__sprites["."] = image.subsurface(4 * self.__sprite_width, self.__sprite_height, self.__sprite_width, self.__sprite_height)
 
         sprite_index = 0
+        #numbers
         for i in range(6, 16):
             self.__sprites[str(sprite_index)] = image.subsurface((i % 10) * self.__sprite_width, (i // 10 + 1) * self.__sprite_height, self.__sprite_width, self.__sprite_height)
             sprite_index += 1
 
         sprite_index = 97
+        #chars
         for i in range(3, 29):
             self.__sprites[chr(sprite_index)] = image.subsurface((i % 10) * self.__sprite_width, (i // 10 + 3) * self.__sprite_height, self.__sprite_width, self.__sprite_height)
             sprite_index += 1
-
-        # Relocate correctly 'v' and 'w' chars
-        self.__sprites['temp'] = self.__sprites['w']
-        self.__sprites['w'] = self.__sprites['v']
-        self.__sprites['v'] = self.__sprites.pop('temp', None)

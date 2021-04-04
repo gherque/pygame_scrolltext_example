@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-from verticalscroll import game
+from horizontalscroll import game
 
 def main(args=None):
     if args is None:

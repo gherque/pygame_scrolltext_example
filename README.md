@@ -1,2 +1,2 @@
-# MOVEMENT
-Repository with a simple example of movement with a bitmap
+# HORIZONTAL TEXT SCROLL
+Repository with a simple example of scroll text taking font from a bitmap

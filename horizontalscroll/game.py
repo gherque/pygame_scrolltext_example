@@ -3,8 +3,8 @@
 import pygame
 import os
 
-from verticalscroll.config import Config
-from verticalscroll.textscroll import TextScroll
+from horizontalscroll.config import Config
+from horizontalscroll.textscroll import TextScroll
 
 class Game:
 

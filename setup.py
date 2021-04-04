@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name="verticalscroll",
+    name="horizontalscroll",
     version="0.0.1",
-    packages=["verticalscroll"],
+    packages=["horizontalscroll"],
     entry_points={
         "console_scripts": [
-            "verticalscroll = verticalscroll.__main__:main"
+            "horizontalscroll = horizontalscroll.__main__:main"
         ]
     },
 )
